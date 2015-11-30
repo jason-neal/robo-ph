@@ -144,6 +144,7 @@ def substitution_lists():
     other = [(r"([A-Za-z]+)\-\-([A-Za-z]+)", r" \g<1>-\g<2>"), \
              (r"(\d+) ?\-\- ?(\d+)", r"\g<1> to \g<2>"), \
              (r"\$?(\w+)_{(.+?)}\$?", r"\g<1> sub \g<2>"), \
+             (r"(\d{1,3}) (\d{3})", r"\g<1>,\g<2>"), \
              ] 
     
     # Can either ignore (remove) accent or 
