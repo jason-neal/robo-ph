@@ -7,7 +7,7 @@ import subprocess
 from AppKit import NSSpeechSynthesizer, NSURL
 import xml.etree.ElementTree as ElementTree
 from bs4 import BeautifulSoup
-from substitutions.py import regex_substitute
+from substitutions import regex_substitute
 
 VALID_VOICES = [str(x.replace('com.apple.speech.synthesis.voice.', '')) for x in NSSpeechSynthesizer.availableVoices()]
 VOICES =['lee.premium', 'fiona.premium', 'emily.premium', 'Alex', 'tom.premium', 'jill.premium', 'sangeeta.premium']
